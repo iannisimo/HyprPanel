@@ -1,3 +1,6 @@
+import { Variable } from "astal";
+import { BashPoller } from "src/lib/poller/BashPoller";
+
 /**
  * Renders the uptime in a human-readable format.
  *
@@ -13,3 +16,21 @@ export const renderUptime = (curUptime: number): string => {
     const minutes = Math.floor(curUptime % 60);
     return ` : ${days}d ${hours}h ${minutes}m`;
 };
+
+const handleTlpResponse = (response: string) => {
+    // console.log(response, tlpStatus.get());
+    return response;
+}
+
+const tlpPollerInterval = Variable(1000);
+
+export const tlpStatus = Variable<string>("unk");
+
+export const tlpPoller = new BashPoller<string, []>(
+    tlpStatus,
+    [],
+    tlpPollerInterval,
+    `${SRC_DIR}/scripts/tlp.sh get`,
+    handleTlpResponse,
+)
+

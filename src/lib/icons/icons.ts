@@ -74,6 +74,11 @@ export default {
         'power-saver': 'power-profile-power-saver-symbolic',
         performance: 'power-profile-performance-symbolic',
     },
+    tlp: {
+        auto: 'power-profile-balanced-symbolic',
+        ac: 'power-profile-power-saver-symbolic',
+        bat: 'power-profile-performance-symbolic',
+    },
     asusctl: {
         profile: {
             Balanced: 'power-profile-balanced-symbolic',

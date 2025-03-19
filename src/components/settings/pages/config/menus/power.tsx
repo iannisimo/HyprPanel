@@ -16,6 +16,7 @@ export const PowerMenuSettings = (): JSX.Element => {
             <box vertical>
                 <Header title="Power Menu" />
                 <Option opt={options.menus.power.showLabel} title="Show Label" type="boolean" />
+                <Option opt={options.menus.power.powerProfileService} title="Power Profile Service" type="enum" enums={['ppd', 'tlp']} />
                 <Option
                     opt={options.menus.power.lowBatteryNotification}
                     title="Show Notification For Low Battery"

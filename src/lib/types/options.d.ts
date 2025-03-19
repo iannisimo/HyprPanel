@@ -12,13 +12,13 @@ export type MkOptionsResult = {
 
 export type RecursiveOptionsObject = {
     [key: string]:
-        | RecursiveOptionsObject
-        | Opt<string>
-        | Opt<number>
-        | Opt<boolean>
-        | Variable<string>
-        | Variable<number>
-        | Variable<boolean>;
+    | RecursiveOptionsObject
+    | Opt<string>
+    | Opt<number>
+    | Opt<boolean>
+    | Variable<string>
+    | Variable<number>
+    | Variable<boolean>;
 };
 
 export type BarLocation = 'top' | 'bottom';
@@ -71,6 +71,8 @@ export type NotificationAnchor =
     | 'right';
 export type OSDAnchor = 'top left' | 'top' | 'top right' | 'right' | 'bottom right' | 'bottom' | 'bottom left' | 'left';
 export type BarButtonStyles = 'default' | 'split' | 'wave' | 'wave2';
+
+export type PowerProfileService = 'ppd' | 'tlp';
 
 export type ThemeExportData = {
     filePath: string;

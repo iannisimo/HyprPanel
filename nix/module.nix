@@ -429,6 +429,7 @@ in
       menus.power.lowBatteryThreshold = mkIntOption 20;
       menus.power.reboot = mkStrOption "systemctl reboot";
       menus.power.showLabel = mkBoolOption true;
+      menus.power.powerProfileService = mkStrOption "ppd";
       menus.power.shutdown = mkStrOption "systemctl poweroff";
       menus.power.sleep = mkStrOption "systemctl suspend";
       menus.transition = mkStrOption "crossfade";

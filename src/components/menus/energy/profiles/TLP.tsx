@@ -7,7 +7,7 @@ import { tlpPoller, tlpStatus } from "./helpers";
 export const TLP = (): JSX.Element => {
 
     tlpPoller.initialize();
-    const profiles = ['auto', 'ac', 'bat'];
+    const profiles = ['auto', 'bat', 'ac'];
 
     return (
         <box className={"menu-items-section"} valign={Gtk.Align.FILL} vexpand vertical>

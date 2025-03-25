@@ -75,9 +75,9 @@ export default {
         performance: 'power-profile-performance-symbolic',
     },
     tlp: {
-        auto: 'resources-symbolic',
-        ac: 'uninterruptible-power-supply-symbolic',
-        bat: 'battery-good-symbolic',
+        auto: 'power-profile-balanced-symbolic',
+        bat: 'power-profile-power-saver-symbolic',
+        ac: 'power-profile-performance-symbolic',
     },
     asusctl: {
         profile: {
